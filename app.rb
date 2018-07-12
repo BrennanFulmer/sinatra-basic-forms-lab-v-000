@@ -12,7 +12,7 @@ class App < Sinatra::Base
   end
 
   post '/display_puppy' do
-    # puppy class interaction
+    @new_puppy = Puppy.new()
     
     erb :display_puppy
   end
